@@ -6,23 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta cinematográfica</title>
 </head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: rgb(180, 209, 214);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 5px;
+  font-size: px;
+  
+}
+.box{
+  
+  height: 20px;
+  width: 150px;
+}
+
+.flex-enviar {
+  display: flex;
+  background-color: rgb(68, 194, 216);
+  justify-content:center;
+}
+
+.flex-enviar > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 5px;
+  font-size: px;
+  
+  
+}
+</style>
+
+
 <body>
     <div id="Contenedor">
         <h2>Encuesta de cine: Nominadas al oscar 2018</h2>
         <form id="formulario1" name="formulario1" method="post" action="data.php">
             <fieldset id="datos_personales">
                 <legend>Datos personales</legend>
-                <label for="nombre">Nombre: <input type="text" name="nombre" id="nombre"> <br> </label> <br> 
-                <label for="nombre">Apellidos: <input type="text" name="apellido" id="apellido"><br> </label> <br> 
-                <label for="dni">DNI <input type="text" name="dni" id="dni" maxlength="9" ><br> </label> <br>
-                <label for="edad">Edad <input type="text" name="edad" id="edad" size="2" maxlength="9" ><br> </label><br>
-                
+                <div class="flex-container">
+                    <div class="box"> <label for="nombre">  Nombre:  </label> <br>   </div>
+                    <div> <input type="text" name="nombre" id="nombre" size="70"> <br> </div>
+                </div>
+                <div class="flex-container">
+                    <div class="box"><label for="apellido">Apellidos: </label> <br> </div>
+                    <div><input type="text" name="apellido" id="apellido" size="70"><br></div>
+
+                </div>
+                <div class="flex-container">
+                    <div class="box"><label for="dni">DNI:  </label> <br></div>
+                    <div><input type="text" name="dni" id="dni" maxlength="8"    ><br></div>
+                </div>
+                <div class="flex-container">
+                    <div class="box"> <label for="edad">Edad:  </label><br></div>
+                    <div> <input type="text" name="edad" id="edad" maxlength="9" ><br></div>
+                </div>
+                <div class="flex-container">
+                    <div class="box"> Género </div>
+                    <div>
+                        <select name="genero">
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            </select>
+                    </div>
+                </div>
             </fieldset>
+            <fieldset id="mejor_pelicula" >
+                <legend>Mejor Pelicula</legend>
+                <div class="flex-container">
+                    <div><input type="radio" name="pelicula" value="11" > Call Me By your name <br></div>
+                </div>
+                <div class="flex-container">
+                    <div><input type="radio" name="pelicula" value="22" > Bohemian Rhapsody <br></div>
+                </div>
+                <div class="flex-container">
+                    <div><input type="radio" name="pelicula" value="33" > Dejame salir  <br></div>
+                </div>
+            </fieldset>
+            <fieldset id="selecciona_peliculas">
+                <legend> Selecciona las peliculas que no haya visto</legend>
+                <div class="flex-container">
+                    <label><input type="checkbox" name="Interestelar"> Interestelar</label><br>
+                </div>
+                <div class="flex-container">
+                    <label><input type="checkbox" name="Invencible"> Invencible</label><br>
+                </div>
+                <div class="flex-container">
+                    <label><input type="checkbox" name="Deadpool 2"> Deadpool 2</label><br>
+                </div>
+                <div class="flex-container">
+                    <label><input type="checkbox" name="Isla de perros"> Isla de perros</label><br>
+                </div>
+            </fieldset>
+            <fieldset id="grupo_argumento">
+                <legend>Argumento de tu pelicula preferida</legend>
+                <div class="flex-container">
+                    <div> <textarea name="argumento" id="argumento" cols="100" rows="12"></textarea> </div>
+                </div>
+            </fieldset>
+            <br>
+            <div class="flex-enviar">
+                <div class="boxalineado" ><input type="reset" value="Borrar formulario"> <input type="submit" value="Enviar"></div>
+            </div>
             
+        
         </form>
-
-
-    </div>
     
+    </div>    
 </body>
 </html>
