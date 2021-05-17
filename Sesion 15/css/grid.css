@@ -1,0 +1,22 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "head head" "menu main" "foot foot";
+}
+.a{
+    grid-area: head;
+    background-color: cornflowerblue;
+}
+.b{
+    grid-area: menu;
+    background-color: blue;
+}
+.c{
+    grid-area: main;
+    background-color: aquamarine
+}
+.d{
+    grid-area: foot;
+    background-color: blueviolet;
+}

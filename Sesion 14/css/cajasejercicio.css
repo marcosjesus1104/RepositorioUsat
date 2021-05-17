@@ -1,0 +1,52 @@
+#caja01{
+    
+    margin: 5px;
+    padding: 15px;
+}
+#img{
+    float: right;
+    background-color: teal;
+    margin: 10px;
+}
+.box{
+    background-color: thistle;
+    margin: 5px;
+    text-align: justify;
+}
+#caja04{
+    background-color: turquoise;
+    float: right;
+}
+#titulo{
+    text-align: center;
+    border-style: groove solid;
+    border-color: tomato;
+    background-color:red;
+    font-weight: bold;
+    padding: 35px;
+    border: 0px;
+    color:white;
+    
+}
+.flexcontenedor{
+    display: flex;
+    background-color: rgb(180,209,214);
+    border-color: rgb(180, 209, 214);
+    
+}
+
+.flexcontenedor > div {  
+  background-color: rgb(180, 209, 214);
+  margin: 1px;
+  padding: 0px;
+  border: 0px;
+  font-size: px;
+}
+.caja{
+    width: 100px;
+    text-align: center;
+}
+.cabecera{
+    
+}
+

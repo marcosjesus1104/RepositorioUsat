@@ -1,0 +1,4 @@
+a[href^="mailto:"]{
+    font-family: Verdana;
+    color: rgb(182, 132, 230);
+}
