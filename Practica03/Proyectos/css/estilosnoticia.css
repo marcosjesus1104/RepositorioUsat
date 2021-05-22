@@ -6,7 +6,8 @@
 }
 .box{
     background-color: thistle;
-    margin: 5px;
+    margin: 2px;
+    padding: 20px;
     text-align: justify;
 }
 #caja04{

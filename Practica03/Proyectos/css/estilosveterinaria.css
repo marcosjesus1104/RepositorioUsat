@@ -1,0 +1,100 @@
+  
+body{
+    background-image: url('../recursos/veterinariafondo.jpg');
+}
+.grid{
+    display: grid;
+    max-width: 1001px;
+    margin: auto;
+    height: 100vh;
+    grid-template-columns: 23% 57% 20%;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+        "header header header" "nav section aside"
+        "footer footer footer";
+}
+.header{
+    grid-area: header;
+    
+}
+.header img{
+   width: 100%;
+   height: 100%;
+}
+.nav{
+    grid-area: nav;
+    margin-top: -5px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+nav ul{
+    line-height: 25px;
+    list-style: none;
+}
+.section{
+    grid-area: section;
+    background-color: indigo;
+    margin-top: -5px;
+    
+}
+.aside{
+    grid-area: aside;
+    background-color: rgb(175, 13, 175);
+    color: white;
+    margin-top: -5px;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(175, 110, 207);
+}
+
+header img{
+    width: 100%;
+}
+.articulo{
+    color: black;
+    background-color: rgb(238, 236, 236);
+    width: 90%;
+    height: 90%;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 3%;
+    
+    
+}
+.articulo p{
+    text-align: justify;
+}
+.articulo img{
+    width: 115px;
+    height: 80px;
+    float: left;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+aside{
+    padding: 20px;
+}
+footer{
+    text-align: center;
+}
+
+
+@media (max-width:1000px){
+    .grid{
+        grid-template-areas:
+            "header header header" "nav nav nav"
+            " aside section section " "footer footer footer";
+    }
+}
+@media (max-width:600px){
+    .grid{
+        grid-template-areas:
+            "header header header" "nav nav nav"
+            "section section section" "aside aside aside"
+            "footer footer footer";
+    }
+}

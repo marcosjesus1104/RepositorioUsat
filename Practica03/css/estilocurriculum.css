@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+}
+
+.grid{
+    max-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 180px 1fr 120px;
+    grid-template-areas: "nav header header" "articulo articulo aside" "section section section"
+                        "footer footer footer";
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(92, 86, 86);
+    color: white;
+    font-size: 20px;
+    padding-right: 0px;
+    padding: 3px;
+    padding-left: 0px;
+    
+}
+.nav ul{
+    margin-left: -35px;
+}
+.nav ul li{
+    list-style: none;
+    color: white;
+    margin: 2px;
+    padding: 7px;
+    margin-left: 0px;
+    border: 1px solid; border-color: black;
+    text-align: center;
+}
+
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+
+.header{
+    grid-area: header;
+    background-color: #7fffd4; 
+}
+.header img{
+    width: 150px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 0px;
+    padding-right: 38px;
+}
+.header h3{
+    text-align: center;
+}
+header a{
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#iniciarsesion{
+    float: right;
+}
+.nombre{
+    font-size: 60px;
+    padding-top: 40px;
+    margin: 0px;
+      padding-left: 100px;
+}
+
+.articulo{
+    grid-area: articulo;
+    background-color: whitesmoke;
+}
+.articulo  h3{
+    color: blue;
+    margin-left: 10px;
+}
+.articulo p{
+    margin-left: 10px;
+}
+.articulo table{
+     border: 1px solid;
+     margin-left: 10px;
+     padding: 5px;
+ }
+
+ .articulo thead{
+     border: 1px solid;
+ }
+ .articulo th {
+     border: 1px solid;
+ }
+ .articulo td{
+     border: 1px solid;
+ }
+.tabla{
+    font-style: italic;
+    border: 1 px solid;
+    border: cadetblue;
+    width: 70%;
+    text-align: left;
+    
+}
+
+
+
+.aside{
+    grid-area: aside;
+    border: 1px solid;
+    background-color: skyblue;
+    border-color: skyblue;
+    padding: 10px;
+}
+
+.aside nav{
+    margin: 20px;
+    background-color: rgb(32, 218, 178);
+    padding: 8px;
+}
+
+.aside nav ul{
+    margin-top: 10px;   
+}
+
+.aside nav ul li{
+    font-size: 18px;
+}
+
+.aside nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.aside .Enlace_interes{
+    margin-top: 50px;
+}
+.imagen-noticia{
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin-right: 2%;
+    padding: 10px;
+}
+.section{
+    grid-area: section;
+    background-color: aquamarine;
+    display:flex; 
+    justify-content: space-between; 
+    font: italic ;
+    padding-right: 257px;
+
+}
+.section ul{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.section div img{
+    width: 120px;
+    padding: 5px;
+    margin-left: 20%;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+footer p{
+    padding: 13px;
+}
+.imagen-yo{
+    position: relative;
+    display: flex;
+    float: left;
+}
+#imagenyo{
+    height: 100px;
+    padding: 8px;
+}

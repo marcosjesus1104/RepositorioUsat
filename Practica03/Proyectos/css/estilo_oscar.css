@@ -1,0 +1,63 @@
+.flex-container {
+    display: flex;
+    background-color: gray;
+    
+
+  }
+  
+  .flex-container > div {
+    background-color: gray;
+    margin: 10px;
+    padding: 5px;
+    font-size: px;
+    border-radius: 10px;
+    
+  }
+  .box{
+    
+    height: 20px;
+    width: 150px;
+  }
+  
+  .flex-enviar {
+    display: flex;
+    background-color: rgb(71, 76, 77);
+    justify-content:center;
+    border-radius: 10px;
+  }
+  
+  .flex-enviar > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 5px;
+    font-size: px;
+    border-bottom: 10px;
+  }
+
+  body{
+      background-color: black;
+      color: white;
+      
+  }
+  
+  .titulo{
+      text-align: center;
+      justify-content: center;
+      
+  }
+  .oscar{
+    
+    width: 150px;
+    height: 60px;
+    margin-right: 2%;
+    padding: 10px;
+  }
+  form{
+      width: 61%;
+      margin: auto;
+      
+  }
+  fieldset{
+      border-radius: 10px;
+      font-size: 20px;
+  }

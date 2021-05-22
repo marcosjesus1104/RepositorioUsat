@@ -1,0 +1,38 @@
+.body{
+    background-color: gray;
+    text-align: center;
+}
+f
+.contenedor{
+    text-align: center;
+    background-color: rgb(221, 211, 211);
+}
+.body input{
+    margin: 10px;
+}
+form{
+    
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    background-color:rgb(221, 211, 211) ;
+    border-radius: 10px;
+
+}
+form h1{
+    padding: 10px;
+    margin: 0px;
+}
+.datos{
+    text-align: center;
+    width:max-content;
+    margin:  auto;
+}
+
+button{
+    background-color: rgb(165, 121, 206);
+}
+fieldset{
+    margin: 10px;
+    border-radius: 10px;
+}
