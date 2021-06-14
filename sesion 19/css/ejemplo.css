@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+.tiles {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+}
+
+.tile {
+  float: left;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  font-size: 400px;
+  font-weight: bold;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+.fliph {
+  transform: scaleX(-1); 
+}
+
+.flipv {
+  transform: scaleY(-1); 
+}
+
+.flipv2 {
+  transform: scaleY(-1); 
+  transform: rotate(180deg); 
+}
+
+.fliphv {
+  transform: rotate(90deg);
+}
